@@ -23,5 +23,4 @@ for (const { objectName, databaseSettings } of config) {
   app.use(`/api/v1/${objectName}`, objectRouterInstance);
 }
 
-
 module.exports = app;
