@@ -2,7 +2,7 @@
   {
      "databaseSettings": {"name": {
     "type": "String",
-    "required": true,
+    "required":"[true, 'A tour must have a name']",
     "unique": true
   }},
     "objectName": "tasks"
@@ -11,7 +11,7 @@
     "databaseSettings": {
       "name": {
         "type": "String",
-        "required": true,
+        "required": "[true, 'A tour must have a name']",
         "unique": true
       }
     },
