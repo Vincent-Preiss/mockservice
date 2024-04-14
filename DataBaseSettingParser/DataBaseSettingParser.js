@@ -10,7 +10,6 @@ exports.parse = (settings) => {
           newInnerValue = newInnerValue.replace(']', '');
           newInnerValue = newInnerValue.split(',');
           newInnerValue.map(el => {
-            console.log(el);
             return replaceKeyWordStringsWithKeyWords(el)
           });
            innerReturnObj[innerKey] = newInnerValue;
@@ -27,6 +26,7 @@ exports.parse = (settings) => {
     }
     returnObj[key] = innerReturnObj;
   }
+  console.log(returnObj)
     return {
       returnObj
     };
@@ -38,6 +38,8 @@ const replaceKeyWordStringsWithKeyWords = (string) => {
       return true; 
     case "String":
       return String; 
+    case "Number":
+      return Number; 
     default:
       return string; 
   }

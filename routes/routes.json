@@ -13,108 +13,16 @@
         "type": "String",
         "required": "[true, 'A tour must have a name']",
         "unique": true
+      },
+      "rating": {
+        "type": "Number",
+        "default": 4.5
+      },
+      "price": {
+        "type": "Number",
+        "required": "[true, 'A tour must have a price']"
       }
     },
     "objectName": "equipments"
-  },
-  {
-    "databaseSettings": {
-      "name": {
-        "type": "String",
-        "required": true,
-        "unique": true
-      }
-    },
-    "objectName": "models"
-  },
-  {
-    "databaseSettings": {
-      "name": {
-        "type": "String",
-        "required": true,
-        "unique": true
-      }
-    },
-    "objectName": "aois"
-  },
-  {
-    "databaseSettings": {
-      "name": {
-        "type": "String",
-        "required": true,
-        "unique": true
-      }
-    },
-    "objectName": "task-aoi-links"
-  },
-  {
-    "databaseSettings": {
-      "name": {
-        "type": "String",
-        "required": true,
-        "unique": true
-      }
-    },
-    "objectName": "task-equipment-links"
-  },
-  {
-    "databaseSettings": {
-      "name": {
-        "type": "String",
-        "required": true,
-        "unique": true
-      }
-    },
-    "objectName": "task-model-settings"
-  },
-  {
-    "databaseSettings": {
-      "name": {
-        "type": "String",
-        "required": true,
-        "unique": true
-      }
-    },
-    "objectName": "results"
-  },
-  {
-    "databaseSettings": {
-      "name": {
-        "type": "String",
-        "required": true,
-        "unique": true
-      }
-    },
-    "objectName": "result-aoi-link"
-  },
-  {
-    "databaseSettings": {
-      "name": {
-        "type": "String",
-        "required": true,
-        "unique": true
-      }
-    },
-    "objectName": "result-equipment-link"
-  },
-  {
-    "databaseSettings": {
-      "name": {
-        "type": "String",
-        "required": true,
-        "unique": true
-      }
-    },
-    "objectName": "result-model-link"
-  },
-  {
-    "databaseSettings": {
-      "name": {
-        "type": "String",
-        "required": true,
-        "unique": true
-      }
-    },
-    "objectName": "result-task-link"
   }
 ]
