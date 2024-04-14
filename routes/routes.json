@@ -1,0 +1,120 @@
+[
+  {
+     "databaseSettings": {"name": {
+    "type": "String",
+    "required": true,
+    "unique": true
+  }},
+    "objectName": "tasks"
+  },
+  {
+    "databaseSettings": {
+      "name": {
+        "type": "String",
+        "required": true,
+        "unique": true
+      }
+    },
+    "objectName": "equipments"
+  },
+  {
+    "databaseSettings": {
+      "name": {
+        "type": "String",
+        "required": true,
+        "unique": true
+      }
+    },
+    "objectName": "models"
+  },
+  {
+    "databaseSettings": {
+      "name": {
+        "type": "String",
+        "required": true,
+        "unique": true
+      }
+    },
+    "objectName": "aois"
+  },
+  {
+    "databaseSettings": {
+      "name": {
+        "type": "String",
+        "required": true,
+        "unique": true
+      }
+    },
+    "objectName": "task-aoi-links"
+  },
+  {
+    "databaseSettings": {
+      "name": {
+        "type": "String",
+        "required": true,
+        "unique": true
+      }
+    },
+    "objectName": "task-equipment-links"
+  },
+  {
+    "databaseSettings": {
+      "name": {
+        "type": "String",
+        "required": true,
+        "unique": true
+      }
+    },
+    "objectName": "task-model-settings"
+  },
+  {
+    "databaseSettings": {
+      "name": {
+        "type": "String",
+        "required": true,
+        "unique": true
+      }
+    },
+    "objectName": "results"
+  },
+  {
+    "databaseSettings": {
+      "name": {
+        "type": "String",
+        "required": true,
+        "unique": true
+      }
+    },
+    "objectName": "result-aoi-link"
+  },
+  {
+    "databaseSettings": {
+      "name": {
+        "type": "String",
+        "required": true,
+        "unique": true
+      }
+    },
+    "objectName": "result-equipment-link"
+  },
+  {
+    "databaseSettings": {
+      "name": {
+        "type": "String",
+        "required": true,
+        "unique": true
+      }
+    },
+    "objectName": "result-model-link"
+  },
+  {
+    "databaseSettings": {
+      "name": {
+        "type": "String",
+        "required": true,
+        "unique": true
+      }
+    },
+    "objectName": "result-task-link"
+  }
+]
