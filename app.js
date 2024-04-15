@@ -1,6 +1,5 @@
 const express = require('express');
 const morgan = require('morgan');
-const fs = require('fs');
 const config = require('./config/config');
 
 const objectRouter = require('./routes/objectRoutes');
@@ -16,7 +15,6 @@ app.use(express.json());
 
 // 3) ROUTES
 
-console.log(config);
 for (const { objectName, databaseSettings } of config['config']) {
   const objectRouterInstance = objectRouter.createRouter({
     objectName,
