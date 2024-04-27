@@ -1,4 +1,5 @@
 const Object = require('./../models/objectModel');
+const APIFeatures = require('../utils/apiFeatures');
 
 module.exports = class ObjectController {
     constructor(config) {
@@ -11,8 +12,16 @@ module.exports = class ObjectController {
         }
          
        async getAllObjects(req, res) {
-           try {
-           const objects = await this.objectModel.find();
+         try {
+              const features = new APIFeatures(
+                this.objectModel.find(),
+                req.query
+              )
+                .filter()
+                .sort()
+                .limitFields()
+                .paginate();
+              const objects = await features.query;
            res.status(200).json({
              status: 'success',
              results: objects.length,
